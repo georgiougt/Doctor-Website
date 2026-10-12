@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Dr. Savvas Savvoulas</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        /* Accordion Styles local for now, can move to global */
+        .accordion-item {
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            background: white;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 1.5rem;
+            text-align: left;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header:hover {
+            background-color: var(--color-bg-light);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: var(--color-bg-light);
+        }
+
+        .accordion-content p {
+            padding: 1.5rem;
+            color: var(--color-text-light);
+        }
+
+        .icon-plus {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index-en.html" class="logo">Dr. Savvas Savvoulas</a>
+            <div class="mobile-menu-btn"><span>☰</span></div>
+            <nav class="nav-links">
+                <a href="about.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Services ▾</a>
+                    <div class="dropdown-content">
+                        <a href="pediatrician.html" class="dropdown-item">Pediatrician</a>
+                        <a href="family-physician.html" class="dropdown-item">Personal Doctor</a>
+                        <a href="hbot.html" class="dropdown-item">HBOT Therapy</a>
+                    </div>
+                </div>
+                <a href="faq.html" class="nav-link active" style="color: var(--color-primary);">FAQ</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <div class="lang-switch">
+                    <a href="faq.html" class="active">EN</a>
+                    <span>|</span>
+                    <a href="faq-gr.html">GR</a>
+                </div>
+
+                <a href="tel:+35712345678" class="btn btn-primary">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section bg-light">
+        <div class="container" style="max-width: 800px;">
+            <h1 class="text-center" style="margin-bottom: 3rem;">Frequently Asked Questions</h1>
+
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Are you part of the GESY (GHS) system?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, Dr. Savvas Savvoulas is a registered Personal Doctor within the GeSY (General Healthcare
+                            System) of Cyprus, providing free primary healthcare services to eligible beneficiaries.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What ages do you treat?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We treat patients of all ages! As a Pediatrician, Dr. Savvas cares for newborns, children,
+                            and adolescents. As a Family Physician, he provides care for adults and seniors.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do I need a referral for Hyperbaric Oxygen Therapy?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>While a referral is helpful, it is not strictly mandatory for an initial consultation.
+                            However, Dr. Savvas will need to conduct a thorough medical assessment to ensure HBOT is
+                            safe and appropriate for your specific condition.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How can I book an appointment?
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can book an appointment by calling our office directly at +357 12 345 678, or by using
+                            the contact form on our website to request a call back.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Dr. Savvas Savvoulas</h3>
+                    <p style="color: #a0aec0; margin-bottom: 1rem;">Paediatrician & Family Physician based in Cyprus.
+                    </p>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <a href="pediatrician.html">Pediatrics</a>
+                    <a href="family-physician.html">Family Medicine</a>
+                    <a href="hbot.html">Hyperbaric Oxygen Therapy</a>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <a href="tel:+35712345678">+357 12 345 678</a>
+                    <a href="mailto:info@drsavvoulas.com">info@drsavvoulas.com</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: #718096; font-size: 0.875rem;">&copy; 2026 Dr.
+                Savvas Savvoulas. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

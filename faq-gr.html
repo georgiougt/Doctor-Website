@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Συχνές Ερωτήσεις (FAQ) | Δρ. Σάββας Σάββουλας</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        /* Accordion Styles local for now, can move to global */
+        .accordion-item {
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            background: white;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 1.5rem;
+            text-align: left;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header:hover {
+            background-color: var(--color-bg-light);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: var(--color-bg-light);
+        }
+
+        .accordion-content p {
+            padding: 1.5rem;
+            color: var(--color-text-light);
+        }
+
+        .icon-plus {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index-gr.html" class="logo">Δρ. Σάββας Σάββουλας</a>
+            <div class="mobile-menu-btn"><span>☰</span></div>
+            <nav class="nav-links">
+                <a href="about-gr.html" class="nav-link">Σχετικά</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Υπηρεσίες ▾</a>
+                    <div class="dropdown-content">
+                        <a href="pediatrician-gr.html" class="dropdown-item">Παιδίατρος</a>
+                        <a href="family-physician-gr.html" class="dropdown-item">Προσωπικός Ιατρός</a>
+                        <a href="hbot-gr.html" class="dropdown-item">Θεραπεία Υπερβαρικού Οξυγόνου</a>
+                    </div>
+                </div>
+                <a href="faq-gr.html" class="nav-link active" style="color: var(--color-primary);">FAQ</a>
+                <a href="contact-gr.html" class="nav-link">Επικοινωνία</a>
+
+                <div class="lang-switch">
+                    <a href="faq.html">EN</a>
+                    <span>|</span>
+                    <a href="faq-gr.html" class="active">GR</a>
+                </div>
+
+                <a href="tel:+35712345678" class="btn btn-primary">Καλέστε Τώρα</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section bg-light">
+        <div class="container" style="max-width: 800px;">
+            <h1 class="text-center" style="margin-bottom: 3rem;">Συχνές Ερωτήσεις</h1>
+
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Είστε συμβεβλημένος με το ΓεΣΥ;
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Ναι, ο Δρ. Σάββας Σάββουλας είναι εγγεγραμμένος Προσωπικός Ιατρός στο ΓεΣΥ (Γενικό Σύστημα
+                            Υγείας) της Κύπρου, παρέχοντας δωρεάν υπηρεσίες πρωτοβάθμιας φροντίδας υγείας στους
+                            δικαιούχους.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Ποιες ηλικίες θεραπεύετε;
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Θεραπεύουμε ασθενείς όλων των ηλικιών! Ως Παιδίατρος, ο Δρ. Σάββας φροντίζει νεογνά, παιδιά
+                            και εφήβους. Ως Οικογενειακός Ιατρός, παρέχει φροντίδα σε ενήλικες και ηλικιωμένους.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Χρειάζομαι παραπεμπτικό για Θεραπεία Υπερβαρικού Οξυγόνου;
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Αν και το παραπεμπτικό είναι χρήσιμο, δεν είναι αυστηρά απαραίτητο για μια αρχική
+                            συμβουλευτική. Ωστόσο, ο Δρ. Σάββας θα πρέπει να διενεργήσει μια ενδελεχή ιατρική αξιολόγηση
+                            για να διασφαλίσει ότι το HBOT είναι ασφαλές και κατάλληλο για τη συγκεκριμένη πάθησή σας.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Πώς μπορώ να κλείσω ραντεβού;
+                        <span class="icon-plus">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Μπορείτε να κλείσετε ραντεβού καλώντας μας απευθείας στο +357 12 345 678, ή χρησιμοποιώντας
+                            τη φόρμα επικοινωνίας στην ιστοσελίδα μας για να ζητήσετε να σας καλέσουμε.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Δρ. Σάββας Σάββουλας</h3>
+                    <p style="color: #a0aec0; margin-bottom: 1rem;">Παιδίατρος & Προσωπικός Ιατρός στην Κύπρο.</p>
+                </div>
+                <div>
+                    <h3>Υπηρεσίες</h3>
+                    <a href="pediatrician-gr.html">Παιδιατρική</a>
+                    <a href="family-physician-gr.html">Οικογενειακή Ιατρική</a>
+                    <a href="hbot-gr.html">Θεραπεία Υπερβαρικού Οξυγόνου</a>
+                </div>
+                <div>
+                    <h3>Επικοινωνία</h3>
+                    <a href="tel:+35712345678">+357 12 345 678</a>
+                    <a href="mailto:info@drsavvoulas.com">info@drsavvoulas.com</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: #718096; font-size: 0.875rem;">&copy; 2026 Δρ.
+                Σάββας Σάββουλας. Με επιφύλαξη παντός δικαιώματος.</div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
